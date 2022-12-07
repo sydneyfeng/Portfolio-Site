@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sydney Feng</title>
+<link href="styles.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div><ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float:right"><a class="active" href="https://www.instagram.com/sydfeng" target="_blank"><img src="img/instagram.png" style="width: 25px"></a></li>
+        <li style="float:right"><a class="active" href="https://github.com/sydneyfeng" target="_blank"><img src="img/github.png" style="width: 25px"></a></li>
+        <li style="float:right"><a class="active" href="https://www.linkedin.com/in/sydneyfeng/" target="_blank"><img src="img/linkedin.png" style="width: 25px"></a></li>
+      </ul></div>
+<div class="w3-content w3-container w3-padding-64 top-margin typewriter" id="home">
+    <h1 class="w3-center">Sydney Feng</h1>
+    <div class="w3-center bottom-margin"><p>Designer. Researcher. Storyteller.</p></div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <div class="typewriter"><h3 class="w3-center">About Me</h3></div>
+    <br>
+    <img src="img/headshot.png" class="w3-col m6 w3-margin w3-circle top-flex-middle" alt="Person" style="width:25%">
+    <div class="w3-col m7 w3-hide-small w3-padding-large top-flex-middle"> <p>I'm a second-year undergraduate Computational Media student at Georgia Tech with interests in user experience research and consumer marketing.</p>
+    <br>
+    <div class="w3-center"><p>I aim to create empathy and inspire growth through my work.</p></div></div>
+    </div>
+    <div class="w3-center"><a href="https://www.linkedin.com/in/sydneyfeng/" target="_blank">
+        <button class="btn">LinkedIn</button>
+    </a></div>
+    <div class="w3-center bottom-margin"></div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <div class="typewriter"><h3 class="w3-center">Portfolio</h3></div>
+    <br>
+    <div class="w3-center"><p>Click below to view samples of my work.</p></div>
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+            <a href="https://www.figma.com/file/gMPMVgRJx1OckcXQatMGVP/11_M003_Website?node-id=0%3A1&t=TiNhKTS2gXyeQ3pL-1/" target="_blank"><img src="img/daja-01.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Branding a Chinese/Taiwanese cafe using Figma and Adobe Creative Suite."></a>
+        </div>
+        <div class="w3-col m3">
+          <a href="img/AP-SydneyF2021.pdf" download="AP-SydneyF2021"><img src="img/ap_portfolio-01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="An example of my artistic graphic design work from AP 2D Art & Design."></a>
+        </div>
+        
+        <div class="w3-col m3">
+            <a href="https://github.com/clin445/LMC-2700-Assignment-5/" target="_blank"><img src="img/lovestung.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A text-based choose-your-own-adventure love story game."></a>
+        </div>
+    
+        <div class="w3-col m3">
+            <a href="https://github.com/zswt64/Twit2/" target="_blank"><img src="img/twitterbot-01.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A Twitter bot that retweets #1 songs and replies 'That's so cool!'"></a>
+        </div>
+      </div>
+    </div>
+    <a href="img/SydneyFengF22Resume.pdf" download="SydneyFeng22Resume">
+        <button class="btn">Resume</button>
+      </a>
+    <div class="w3-center bottom-margin"></div>
+</div>
+
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <div class="typewriter"><h3 class="w3-center">Contact Me</h3></div>
+    <br>
+    <div class="w3-center w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-white w3-xlarge w3-margin-right"></i> Atlanta, GA<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-white w3-xlarge w3-margin-right"></i> Phone: (678) 488-7435<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-white w3-xlarge w3-margin-right"></i> Email: sydneyfeng@gatech.edu<br>
+        </div>
+    </div>
+    <div class="w3-padding-64 w3-padding-large">
+        <form class="w3-container w3-card w3-padding-32" action="mailto:sydneyfeng@gatech.edu?subject=Let%20us%20connect" target="_blank">
+          <p>Let's work together.</p>
+          <div class="w3-section">
+            <p>Name</p>
+            <input class="w3-input" style="width:100%;" type="text" required name="Name">
+          </div>
+          <div class="w3-section">
+            <p>Email</p>
+            <input class="w3-input" style="width:100%;" type="text" required name="Email">
+          </div>
+          <div class="w3-section">
+            <p>Message</p>
+            <input class="w3-input" style="width:100%;" type="text" required name="Message">
+          </div>
+          <a href="mailto:sydneyfeng@gatech.edu?subject=Let%20us%20connect"><button type="submit" class="button w3-center">Send</button></a>
+        </form>
+      </div>
+        <div class="w3-center bottom-margin"></div>
+</div>
+</body>
+<footer class="w3-center w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <p>Made with the help of <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+</html>
